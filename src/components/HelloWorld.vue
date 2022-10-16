@@ -16,11 +16,16 @@ defineProps<{
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@import "@/assets/sass/app2.scss";
 h1 {
   font-weight: 500;
   font-size: 2.6rem;
   top: -10px;
+
+  @include mq(u-br5) {
+    font-size: 5.6rem;
+  }
 }
 
 h3 {
