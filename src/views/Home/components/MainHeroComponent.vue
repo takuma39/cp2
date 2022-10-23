@@ -22,6 +22,7 @@ import Btn from "@/components/BtnComponent.vue";
 @import "@/assets/sass/app2.scss";
 
 .mainHero {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
