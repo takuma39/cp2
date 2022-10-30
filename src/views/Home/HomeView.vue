@@ -2,6 +2,7 @@
 import MainHero from "./components/MainHeroComponent.vue";
 import News from "./components/HomeNewsComponent.vue";
 import Service from "./components/HomeServiceComponent.vue";
+import Work from "./components/HomeWorkComponent.vue";
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import Service from "./components/HomeServiceComponent.vue";
     <MainHero />
     <News />
     <Service />
+    <Work />
     <MainHero />
   </main>
 </template>
