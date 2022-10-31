@@ -29,7 +29,7 @@ import ServiceJson from "@/assets/json/service";
         </CardWrapper>
       </div>
       <div class="p-service__link">
-        <Btn link="/service">CONTACT</Btn>
+        <Btn link="/service">more</Btn>
       </div>
     </div>
   </section>

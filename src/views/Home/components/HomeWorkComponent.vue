@@ -19,12 +19,14 @@ import Swiper from '@/components/SwiperComponent.vue';
         </div>
         <div class="p-works__body">
           <div class="p-works__text">
-            <p>様々なジャンルのWebサイト制作が可能です。<br>
-              ご購入やお申込み数の増加などを実現します！</p>
+            <p>
+              様々なジャンルのWebサイト制作が可能です。<br />
+              ご購入やお申込み数の増加などを実現します！
+            </p>
           </div>
         </div>
         <div class="p-works__link">
-          <Btn link="/work">MORE</Btn>
+          <Btn link="/work">more</Btn>
         </div>
       </div>
     </div>
