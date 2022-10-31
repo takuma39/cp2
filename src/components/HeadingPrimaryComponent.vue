@@ -1,8 +1,27 @@
 <script setup lang="ts">
+import { computed } from "vue";
+const props = defineProps({
+  color: {
+    type: String,
+    required: false,
+    default: "",
+  },
+});
+
+// computed
+const color = computed(() => {
+  return {
+    "--color": props.color,
+  };
+});
 </script>
 
 <template>
-  <h2 class="heading-primary">
+  <h2
+    class="heading-primary"
+    :style="color"
+    :class="{ ' color': props.color != '' }"
+  >
     <slot name="en" />
     <span class="heading-primary__sub">
       <slot name="ja" />
@@ -26,8 +45,8 @@
     @include font-size(30);
   }
 
-  &--white {
-    color: #fff;
+  &.color {
+    color: var(--color);
   }
 }
 
