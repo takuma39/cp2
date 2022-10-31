@@ -26,16 +26,25 @@ window.addEventListener("scroll", () => {
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item">
-          <router-link to="/" class="nav__link">Home</router-link>
+          <router-link to="/" class="nav__link">home</router-link>
         </li>
         <li class="nav__item">
-          <router-link to="/" class="nav__link">Home</router-link>
+          <router-link to="/news" class="nav__link">news</router-link>
         </li>
         <li class="nav__item">
-          <router-link to="/" class="nav__link">Home</router-link>
+          <router-link to="/service" class="nav__link">service</router-link>
         </li>
         <li class="nav__item">
-          <router-link to="/" class="nav__link">Home</router-link>
+          <router-link to="/work" class="nav__link">work</router-link>
+        </li>
+        <li class="nav__item">
+          <router-link to="/company" class="nav__link">company</router-link>
+        </li>
+        <li class="nav__item">
+          <router-link to="/recruit" class="nav__link">recruit</router-link>
+        </li>
+        <li class="nav__item">
+          <router-link to="/contact" class="nav__link">contact</router-link>
         </li>
       </ul>
     </nav>
@@ -112,7 +121,7 @@ window.addEventListener("scroll", () => {
       height: 1px;
       content: "";
       transition: width 0.3s;
-      background-color: rgb(0, 0, 0);
+      background-color: #fff;
     }
 
     &:hover {
