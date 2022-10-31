@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import MainHero from "./components/MainHeroComponent.vue";
+import MainHero from "@/layouts/MainHeroComponent.vue";
 import News from "./components/HomeNewsComponent.vue";
 import Service from "./components/HomeServiceComponent.vue";
 import Work from "./components/HomeWorkComponent.vue";
