@@ -12,6 +12,8 @@ const app = createApp(App);
 
 app.use(createPinia());
 app.use(router);
-app.use(VueSmoothScroll);
+app.use(VueSmoothScroll, {
+  duration: 300,
+});
 
 app.mount("#app");
