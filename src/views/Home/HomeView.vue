@@ -5,6 +5,7 @@ import Service from "./components/HomeServiceComponent.vue";
 import Work from "./components/HomeWorkComponent.vue";
 import Company from "./components/HomeCompanyComponent.vue";
 import Recruit from "./components/HomeRecruitComponent.vue";
+import Contact from "@/layouts/ContactLink.vue";
 </script>
 
 <template>
@@ -15,13 +16,10 @@ import Recruit from "./components/HomeRecruitComponent.vue";
     <Work />
     <Company />
     <Recruit />
-    <MainHero />
+    <Contact />
   </main>
 </template>
 
 <style lang="scss">
 @import "@/assets/sass/app2.scss";
-main {
-  height: 200vh;
-}
 </style>

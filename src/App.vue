@@ -2,13 +2,14 @@
 import { RouterView } from "vue-router";
 // import HelloWorld from "./components/HelloWorld.vue";
 import Header from '@/layouts/HeaderLayout.vue';
+import Footer from '@/layouts/FooterLayout.vue';
 // import SpMenu from '@/layouts/SpMenuLayout.vue';
 </script>
 
 <template>
   <Header />
-  <!-- <SpMenu /> -->
   <RouterView />
+  <Footer />
 </template>
 
 <style scoped lang="scss">
