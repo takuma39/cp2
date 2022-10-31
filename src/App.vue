@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import { RouterView } from "vue-router";
-// import HelloWorld from "./components/HelloWorld.vue";
 import Header from '@/layouts/HeaderLayout.vue';
 import Footer from '@/layouts/FooterLayout.vue';
-// import SpMenu from '@/layouts/SpMenuLayout.vue';
+import PageTop from '@/layouts/PageTopLayout.vue';
 </script>
 
 <template>
   <Header />
   <RouterView />
   <Footer />
+  <PageTop />
 </template>
 
 <style scoped lang="scss">
