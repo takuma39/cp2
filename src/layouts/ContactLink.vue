@@ -21,7 +21,7 @@ import Btn from "@/components/BtnComponent.vue";
         </div>
       </div>
       <div class="contactLink__link">
-        <Btn link="/more">more</Btn>
+        <Btn link="/contact">more</Btn>
       </div>
     </div>
   </section>

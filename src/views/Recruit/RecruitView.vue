@@ -9,14 +9,14 @@ const breadcrumbs = [
     path: "/",
   },
   {
-    name: "work",
+    name: "recruit",
   },
 ];
 </script>
 
 <template>
   <main>
-    <SubHero en="work" ja="制作実績" />
+    <SubHero en="recruit" ja="採用情報" />
     <Breadcrumb :breadcrumbs="breadcrumbs" />
     <Contact />
   </main>
