@@ -7,6 +7,15 @@ import CompanyView from "../views/Company/CompanyView.vue";
 import RecruitView from "../views/Recruit/RecruitView.vue";
 import ContactView from "../views/Contact/ContactView.vue";
 
+//遷移後にページTOPに移動
+const scrollBehavior = (to, from, savedPosition) => {
+  if (savedPosition) {
+    return savedPosition;
+  } else {
+    return { top: 0 };
+  }
+};
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -46,6 +55,7 @@ const router = createRouter({
       component: ContactView,
     },
   ],
+  scrollBehavior,
 });
 
 export default router;
