@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Heading from "@/components/HeadingPrimaryComponent.vue";
 import Btn from "@/components/BtnComponent.vue";
+import Message from "@/components/MessageComponent.vue";
 </script>
 
 <template>
@@ -13,25 +14,21 @@ import Btn from "@/components/BtnComponent.vue";
         </Heading>
       </div>
       <div class="company__body">
-        <div class="message">
-          <div class="message__heading">
-            <span class="message__underline">
-              サイトのゴール = <br class="u-sp-only" />
-              夢を叶えること
-            </span>
-          </div>
-          <div class="message__text">
-            <p>
-              お客様の夢を叶えること。<br />
-              それがWebサイトのゴールであり、<br class="u-sp-only" />
-              私たちが目指すことです。<br />
-              だからこそちゃんと成果を出すサイトを<br class="u-sp-only" />
-              全力でお作りします。<br />
-              お客様の笑顔を見たい。<br />
-              夢を実現する手助けをさせてください。
-            </p>
-          </div>
-        </div>
+        <Message>
+          <template v-slot:title>
+            サイトのゴール = <br class="u-sp-only" />
+            夢を叶えること
+          </template>
+          <template v-slot:text>
+            お客様の夢を叶えること。<br />
+            それがWebサイトのゴールであり、<br class="u-sp-only" />
+            私たちが目指すことです。<br />
+            だからこそちゃんと成果を出すサイトを<br class="u-sp-only" />
+            全力でお作りします。<br />
+            お客様の笑顔を見たい。<br />
+            夢を実現する手助けをさせてください。
+          </template>
+        </Message>
       </div>
       <div class="company__link">
         <Btn link="/company">more</Btn>
