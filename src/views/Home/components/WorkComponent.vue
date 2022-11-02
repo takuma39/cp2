@@ -5,27 +5,27 @@ import Swiper from '@/components/SwiperComponent.vue';
 </script>
 
 <template>
-  <section class="p-works l-section">
-    <div class="p-works__inner l-inner">
-      <div class="p-works__img-wrapper">
+  <section class="works l-section">
+    <div class="works__inner l-inner">
+      <div class="works__img-wrapper">
         <Swiper />
       </div>
-      <div class="p-works__desc">
-        <div class="p-works__heading">
+      <div class="works__desc">
+        <div class="works__heading">
           <Heading>
             <template v-slot:en>work</template>
             <template v-slot:ja>制作実績</template>
           </Heading>
         </div>
-        <div class="p-works__body">
-          <div class="p-works__text">
+        <div class="works__body">
+          <div class="works__text">
             <p>
               様々なジャンルのWebサイト制作が可能です。<br />
               ご購入やお申込み数の増加などを実現します！
             </p>
           </div>
         </div>
-        <div class="p-works__link">
+        <div class="works__link">
           <Btn link="/work">more</Btn>
         </div>
       </div>
@@ -35,7 +35,7 @@ import Swiper from '@/components/SwiperComponent.vue';
 
 <style scoped lang="scss">
 @import "@/assets/sass/app2.scss";
-.p-works {
+.works {
   @include section();
   padding: 60px 0 40px 0;
   // $break4: 768;

@@ -67,30 +67,4 @@ import Message from "@/components/MessageComponent.vue";
     margin-bottom: 30px;
   }
 }
-
-.message {
-  margin-bottom: 30px;
-  text-align: center;
-  background-repeat: no-repeat, no-repeat;
-  background-position: center center, center center;
-  background-size: cover, cover;
-
-  &__heading {
-    font-weight: bold;
-    line-height: 1;
-    display: inline-block;
-    margin-bottom: 40px;
-
-    @include font-size(40);
-    // $break4: 768;
-    @include mq(u-br4) {
-      line-height: 1.5;
-
-      @include font-size(32);
-    }
-  }
-  &__underline {
-    background: linear-gradient(transparent 70%, #f5f534 0%);
-  }
-}
 </style>

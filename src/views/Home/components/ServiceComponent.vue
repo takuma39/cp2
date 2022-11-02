@@ -7,15 +7,15 @@ import ServiceJson from "@/assets/json/service";
 </script>
 
 <template>
-  <section class="p-service l-section">
-    <div class="p-service__inner l-inner">
-      <div class="p-service__heading">
+  <section class="service">
+    <div class="service__inner">
+      <div class="service__heading">
         <Heading>
           <template v-slot:en>service</template>
           <template v-slot:ja>事業内容</template>
         </Heading>
       </div>
-      <div class="p-service__body">
+      <div class="service__body">
         <CardWrapper>
           <Card
             v-for="service in ServiceJson"
@@ -28,7 +28,7 @@ import ServiceJson from "@/assets/json/service";
           </Card>
         </CardWrapper>
       </div>
-      <div class="p-service__link">
+      <div class="service__link">
         <Btn link="/service">more</Btn>
       </div>
     </div>
@@ -37,7 +37,7 @@ import ServiceJson from "@/assets/json/service";
 
 <style scoped lang="scss">
 @import "@/assets/sass/app2.scss";
-.p-service {
+.service {
   @include section();
   &__heading {
     text-align: center;
