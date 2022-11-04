@@ -5,12 +5,17 @@ const props = defineProps({
     required: false,
   },
 });
+const htmlText = (msg: string) => {
+  if (!msg) {
+    return msg.replace(/\r?\n/g, "<br>");
+  }
+};
 </script>
 <template>
   <table class="c-table01">
     <tr v-for="data in props.tableData" :key="data.id">
-      <th>{{ data.th }}</th>
-      <td>{{ data.td }}</td>
+      <th v-html="data.th.replace(/\n/g, '<br/>')"></th>
+      <td v-html="data.td.replace(/\n/g, '<br/>')"></td>
     </tr>
   </table>
 </template>
