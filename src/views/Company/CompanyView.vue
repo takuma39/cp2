@@ -25,6 +25,6 @@ const breadcrumbs = [
   </main>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 @import "@/assets/sass/app2.scss";
 </style>
