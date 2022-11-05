@@ -26,7 +26,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="c-card" :data-type="props.col" v-if="props.type === 'A'">
+  <div class="c-card" :data-type="props.col" v-show="props.type === 'A'">
     <div class="c-card__img-wrapper">
       <img class="c-card__img" :src="props.src" alt="" />
     </div>
@@ -36,6 +36,17 @@ const props = defineProps({
         <p><slot name="text" /></p>
       </div>
     </div>
+  </div>
+
+  <div class="c-card" :data-type="props.col" v-show="props.type === 'B'">
+    <router-link to="/" class="c-card__link">
+      <div class="c-card__img-wrapper">
+        <img class="c-card__img" :src="props.src" alt="" />
+      </div>
+      <div class="c-card__body">
+        <div class="c-card__title"><slot name="title" /></div>
+      </div>
+    </router-link>
   </div>
 </template>
 
@@ -57,9 +68,6 @@ const props = defineProps({
     color: $color-text;
   }
   &__title {
-    font-weight: bold;
-    line-height: 1.2;
-    margin-bottom: 15px;
     text-align: center;
 
     @include font-size(18);
@@ -73,6 +81,12 @@ const props = defineProps({
 
     @include font-size(16);
   }
+}
+
+.c-card[data-type="A"] {
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 15px;
 }
 
 .c-card[data-type="col-3"] {
