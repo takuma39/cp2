@@ -2,6 +2,7 @@
 import SubHero from "@/layouts/SubHeroLayout.vue";
 import Breadcrumb from "@/layouts/BreadcrumbLatout.vue";
 import Contact from "@/layouts/ContactLink.vue";
+import ServiceList from "./components/ServiceListComponent.vue";
 
 const breadcrumbs = [
   {
@@ -18,6 +19,7 @@ const breadcrumbs = [
   <main>
     <SubHero en="service" ja="事業案内" />
     <Breadcrumb :breadcrumbs="breadcrumbs" />
+    <ServiceList />
     <Contact />
   </main>
 </template>

@@ -1,15 +1,11 @@
 <script setup lang="ts">
+import { defineProps } from 'vue';
 const props = defineProps({
   tableData: {
     type: Object,
     required: false,
   },
 });
-const htmlText = (msg: string) => {
-  if (!msg) {
-    return msg.replace(/\r?\n/g, "<br>");
-  }
-};
 </script>
 <template>
   <table class="c-table01">
