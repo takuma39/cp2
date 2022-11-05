@@ -33,7 +33,7 @@ import WorkJson from "@/assets/json/work";
 }
 
 ::v-deep {
-  .c-card__img {
+  .card__img {
     border: 1px solid #ececec;
   }
 }

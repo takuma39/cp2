@@ -26,25 +26,35 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="c-card" :data-type="props.col" v-show="props.type === 'A'">
-    <div class="c-card__img-wrapper">
-      <img class="c-card__img" :src="props.src" alt="" />
+  <div
+    class="card"
+    :data-col="props.col"
+    v-show="props.type === 'A'"
+    data-type="A"
+  >
+    <div class="card__img-wrapper">
+      <img class="card__img" :src="props.src" alt="" />
     </div>
-    <div class="c-card__body">
-      <div class="c-card__title"><slot name="title" /></div>
-      <div class="c-card__text">
+    <div class="card__body">
+      <div class="card__title"><slot name="title" /></div>
+      <div class="card__text">
         <p><slot name="text" /></p>
       </div>
     </div>
   </div>
 
-  <div class="c-card" :data-type="props.col" v-show="props.type === 'B'">
-    <router-link to="/" class="c-card__link">
-      <div class="c-card__img-wrapper">
-        <img class="c-card__img" :src="props.src" alt="" />
+  <div
+    class="card"
+    :data-col="props.col"
+    v-show="props.type === 'B'"
+    data-type="B"
+  >
+    <router-link to="/" class="card__link">
+      <div class="card__img-wrapper">
+        <img class="card__img" :src="props.src" alt="" />
       </div>
-      <div class="c-card__body">
-        <div class="c-card__title"><slot name="title" /></div>
+      <div class="card__body">
+        <div class="card__title"><slot name="title" /></div>
       </div>
     </router-link>
   </div>
@@ -52,7 +62,7 @@ const props = defineProps({
 
 <style scoped lang="scss">
 @import "@/assets/sass/app2.scss";
-.c-card {
+.card {
   &__body {
     display: flex;
     flex-direction: column;
@@ -83,13 +93,13 @@ const props = defineProps({
   }
 }
 
-.c-card[data-type="A"] {
+.card[data-type="A"] {
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 15px;
 }
 
-.c-card[data-type="col-3"] {
+.card[data-col="col-3"] {
   margin-bottom: 30px;
   width: calc(33.33333% - 60px / 3);
   margin-right: 30px;
