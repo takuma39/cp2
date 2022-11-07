@@ -5,7 +5,7 @@
 import Breadcrumb from "@/layouts/BreadcrumbLayout.vue";
 import Contact from "@/layouts/ContactLink.vue";
 
-import NewsJson from "@/assets/json/news";
+import NewsJson from "@/assets/json/news.json";
 // const route = useRoute();
 // let current = ref<number>(0);
 // current.value = Number(route.params.id) - 1;

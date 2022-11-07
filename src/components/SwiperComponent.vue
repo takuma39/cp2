@@ -7,10 +7,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 // import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
-const modules = [Pagination, Navigation, Mousewheel];
+import WorkJson from "@/assets/json/work.json";
 
+const modules = [Pagination, Navigation, Mousewheel];
 // 画像
-import WorkJson from "@/assets/json/work";
 const props = defineProps({
   count: {
     type: Number,

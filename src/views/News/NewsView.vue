@@ -3,7 +3,7 @@ import SubHero from "@/layouts/SubHeroLayout.vue";
 import Breadcrumb from "@/layouts/BreadcrumbLayout.vue";
 import Contact from "@/layouts/ContactLink.vue";
 import NewsListWrapper from "./components/NewsListWrapper.vue";
-import NewsJson from "@/assets/json/news";
+import NewsJson from "@/assets/json/news.json";
 
 type NewsObject ={
   id: number;

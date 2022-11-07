@@ -3,7 +3,7 @@ import Heading from "@/components/HeadingPrimaryComponent.vue";
 import Btn from "@/components/BtnComponent.vue";
 import CardWrapper from "@/components/CardWrapperComponent.vue";
 import Card from "@/components/CardComponent.vue";
-import ServiceJson from "@/assets/json/service";
+import ServiceJson from "@/assets/json/service.json";
 </script>
 
 <template>

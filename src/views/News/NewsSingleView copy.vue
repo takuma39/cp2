@@ -4,7 +4,7 @@ import { useRoute } from "vue-router";
 import SubHero from "@/layouts/SubHeroLayout.vue";
 import Breadcrumb from "@/layouts/BreadcrumbLayout.vue";
 import Contact from "@/layouts/ContactLink.vue";
-import NewsJson from "@/assets/json/news";
+import NewsJson from "@/assets/json/news.json";
 // import Sns from "@/components/SnsComponent.vue";
 
 const route = useRoute();

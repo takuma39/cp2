@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import CardWrapper from "@/components/CardWrapperComponent.vue";
 import Card from "@/components/CardComponent.vue";
-import WorkJson from "@/assets/json/work";
+import WorkJson from "@/assets/json/work.json";
 </script>
 
 <template>

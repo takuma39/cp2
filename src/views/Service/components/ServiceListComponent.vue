@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ServiceJson from "@/assets/json/service";
+import ServiceJson from "@/assets/json/service.json";
 import Media from "./MediaComponent.vue";
 </script>
 <template>

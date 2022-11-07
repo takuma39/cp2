@@ -10,7 +10,7 @@ import RecruitView from "../views/Recruit/RecruitView.vue";
 import ContactView from "../views/Contact/ContactView.vue";
 
 //遷移後にページTOPに移動
-const scrollBehavior = (to, from, savedPosition) => {
+const scrollBehavior = (to: any, from: any, savedPosition: any) => {
   if (savedPosition) {
     return savedPosition;
   } else {

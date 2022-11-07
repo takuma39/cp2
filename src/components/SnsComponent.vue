@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SnsJson from "@/assets/json/sns";
+import SnsJson from "@/assets/json/sns.json";
 
 // props
 const props = defineProps({
