@@ -22,12 +22,9 @@ const props = defineProps({
         </div>
       </div>
       <div class="newsList__body">
-        <!-- <router-link
-          :to="{ name: 'single', params: { id: item.id } }"
-          class="newsList__link"
-        >
+        <router-link to="/news" class="newsList__link">
           {{ item.title }}
-        </router-link> -->
+        </router-link>
       </div>
     </li>
   </ul>

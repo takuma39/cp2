@@ -31,12 +31,9 @@ const newsCount = computed(() => {
           </div>
         </div>
         <div class="newsList__body">
-          <!-- <router-link
-            :to="{ name: 'newsSingle', params: { id: news.id } }"
-            class="newsList__link"
-          >
+          <router-link to="/news" class="newsList__link">
             {{ news.title }}
-          </router-link> -->
+          </router-link>
         </div>
       </li>
     </ul>
