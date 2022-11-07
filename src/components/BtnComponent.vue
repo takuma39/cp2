@@ -11,13 +11,32 @@ const props = defineProps({
     required: false,
     default: "",
   },
+  type: {
+    type: String,
+    require: true,
+    default: "A",
+  },
 });
 </script>
 
 <template>
-  <router-link :to="props.link" class="btn" :data-type="props.data">
+  <router-link
+    :to="props.link"
+    class="btn"
+    :data-type="props.data"
+    v-show="props.type === 'A'"
+  >
     <slot></slot>
   </router-link>
+
+  <button
+    class="btn"
+    type="submit"
+    :data-type="props.data"
+    v-show="props.type === 'B'"
+  >
+    <slot></slot>
+  </button>
 </template>
 
 <style scoped lang="scss">

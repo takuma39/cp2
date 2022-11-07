@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import SubHero from "@/layouts/SubHeroLayout.vue";
 import Breadcrumb from "@/layouts/BreadcrumbLayout.vue";
-import Contact from "@/layouts/ContactLink.vue";
+import ContactWrapper from "./components/ContactWrapperComponent.vue";
 
 const breadcrumbs = [
   {
@@ -18,11 +18,10 @@ const breadcrumbs = [
   <main>
     <SubHero en="contact" ja="お問い合わせ" />
     <Breadcrumb :breadcrumbs="breadcrumbs" />
-    <Contact />
+    <ContactWrapper />
   </main>
 </template>
 
 <style lang="scss">
 @import "@/assets/sass/app2.scss";
-
 </style>

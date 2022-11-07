@@ -130,28 +130,28 @@ ul {
   list-style-type: none;
 }
 
-input,
-textarea,
-select {
-  border: none;
-  border-radius: 0;
-  box-sizing: border-box;
-  background: none;
-  outline: none;
-  appearance: none;
-}
+// input,
+// textarea,
+// select {
+//   border: none;
+//   border-radius: 0;
+//   box-sizing: border-box;
+//   background: none;
+//   outline: none;
+//   appearance: none;
+// }
 
-select::-ms-expand {
-  display: none;
-}
+// select::-ms-expand {
+//   display: none;
+// }
 
-input::-ms-expand {
-  display: none;
-}
+// input::-ms-expand {
+//   display: none;
+// }
 
-input[type="radio"] {
-  display: none;
-}
+// input[type="radio"] {
+//   display: none;
+// }
 
 textarea {
   resize: none;
