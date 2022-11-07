@@ -3,7 +3,6 @@ import { computed } from "vue";
 import { RouterLink } from "vue-router";
 import Label from "@/components/LabelComponent.vue";
 import newsJson from '@/assets/json/news.json';
-// import axios from "axios";
 
 const props = defineProps({
   count: {
@@ -24,7 +23,7 @@ const newsCount = computed(() => {
     <ul class="newsList__list">
       <li class="newsList__item" v-for="news in newsCount" :key="news.id">
         <div class="newsList__heading">
-          <time datetime="2020-02-01" class="newsList__date">
+          <time :datetime="news.date" class="newsList__date">
             {{ news.date }}
           </time>
           <div class="newsList__label">
@@ -32,9 +31,12 @@ const newsCount = computed(() => {
           </div>
         </div>
         <div class="newsList__body">
-          <router-link :to="news.id" class="newsList__link">
+          <!-- <router-link
+            :to="{ name: 'newsSingle', params: { id: news.id } }"
+            class="newsList__link"
+          >
             {{ news.title }}
-          </router-link>
+          </router-link> -->
         </div>
       </li>
     </ul>
@@ -83,12 +85,12 @@ const newsCount = computed(() => {
   }
 }
 
-.newsList-wrapper {
-  &__inner {
-    max-width: 780px;
-  }
-  &__body {
-    margin-bottom: 40px;
-  }
-}
+// .newsList-wrapper {
+//   &__inner {
+//     max-width: 780px;
+//   }
+//   &__body {
+//     margin-bottom: 40px;
+//   }
+// }
 </style>

@@ -32,9 +32,7 @@ import WorkJson from "@/assets/json/work";
   }
 }
 
-::v-deep {
-  .card__img {
-    border: 1px solid #ececec;
-  }
+::v-deep(.card__img) {
+  border: 1px solid #ececec;
 }
 </style>

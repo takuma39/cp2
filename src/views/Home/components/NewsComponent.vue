@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Heading from "@/components/HeadingPrimaryComponent.vue";
-import NewsList from "@/components/NewslistComponent.vue";
+import NewsList from "@/components/NewsListComponent.vue";
 // import axios from "axios";
 </script>
 

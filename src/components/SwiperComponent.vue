@@ -76,44 +76,8 @@ const workCount = computed(() => {
   object-fit: cover;
 }
 
-::v-deep {
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
-    position: absolute;
-    top: 50%;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    display: block;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    color: #391e88;
-
-    @include font-size(32);
-  }
-
-  .swiper-button-next::after {
-    content: "\f105";
-  }
-
-  .swiper-button-prev::after {
-    content: "\f104";
-  }
-
-  .swiper-pagination-bullets {
-    bottom: 0px;
-    text-align: right;
-  }
-
-  .swiper-pagination-bullet-active {
-    background: $color-primary;
-  }
-}
-</style>
-
-<!-- <style lang="scss">
-@import "@/assets/sass/app2.scss";
-.swiper-button-next::after,
-.swiper-button-prev::after {
+::v-deep(.swiper-button-next::after),
+::v-deep(.swiper-button-prev::after) {
   position: absolute;
   top: 50%;
   font-family: "Font Awesome 5 Free";
@@ -126,20 +90,20 @@ const workCount = computed(() => {
   @include font-size(32);
 }
 
-.swiper-button-next::after {
+::v-deep(.swiper-button-next::after) {
   content: "\f105";
 }
 
-.swiper-button-prev::after {
+::v-deep(.swiper-button-prev::after) {
   content: "\f104";
 }
 
-.swiper-horizontal > .swiper-pagination-bullets {
+::v-deep(.swiper-pagination-bullets) {
   bottom: 0px;
   text-align: right;
 }
 
-.swiper-pagination-bullet-active {
+::v-deep(.swiper-pagination-bullet-active) {
   background: $color-primary;
 }
-</style> -->
+</style>

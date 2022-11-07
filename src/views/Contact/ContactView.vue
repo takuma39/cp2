@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import SubHero from "@/layouts/SubHeroLayout.vue";
-import Breadcrumb from "@/layouts/BreadcrumbLatout.vue";
+import Breadcrumb from "@/layouts/BreadcrumbLayout.vue";
 import Contact from "@/layouts/ContactLink.vue";
 
 const breadcrumbs = [

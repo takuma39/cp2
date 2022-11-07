@@ -14,13 +14,13 @@ let open = ref<boolean>(false);
       <router-link to="/" v-on:click="open = !open">Home</router-link>
     </div>
     <div class="spMenu__item">
-      <router-link to="/a" v-on:click="open = !open">Concept</router-link>
+      <router-link to="/" v-on:click="open = !open">Concept</router-link>
     </div>
     <div class="spMenu__item">
-      <router-link to="/a" v-on:click="open = !open">Product</router-link>
+      <router-link to="/" v-on:click="open = !open">Product</router-link>
     </div>
     <div class="spMenu__item">
-      <router-link to="/a" v-on:click="open = !open">Shop</router-link>
+      <router-link to="/" v-on:click="open = !open">Shop</router-link>
     </div>
   </div>
 </template>

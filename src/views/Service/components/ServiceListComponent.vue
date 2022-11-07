@@ -23,16 +23,13 @@ import Media from "./MediaComponent.vue";
   &__inner {
     @include inner();
   }
+}
+::v-deep(.media:not(:last-child)) {
+  margin-bottom: 60px;
 
-  ::v-deep {
-    .media:not(:last-child) {
-      margin-bottom: 60px;
-
-      // $break4: 768;
-      @include mq(u-br4) {
-        margin-bottom: 40px;
-      }
-    }
+  // $break4: 768;
+  @include mq(u-br4) {
+    margin-bottom: 40px;
   }
 }
 </style>

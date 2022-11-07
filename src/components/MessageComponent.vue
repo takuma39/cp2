@@ -1,13 +1,4 @@
-<script setup lang="ts">
-// const props = defineProps({
-//   color: {
-//     type: String,
-//     required: false,
-//     default: "",
-//   },
-// });
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="message">
