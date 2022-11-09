@@ -48,14 +48,14 @@ import Message from "@/components/MessageComponent.vue";
     @include inner();
     padding: 100px 0;
     max-width: 1300px;
-    background-image: url(src/assets/images/company/bg-circle.png), url(src/assets/images/company/bg-face.png);
+    background-image: url(/static/images/company/bg-circle.png), url(/static/images/company/bg-face.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     // $break4: 768;
     @include mq(u-br4) {
       padding: 60px 0;
-      background-image: url(src/assets/images/company/sp_bg-circle.png);
+      background-image: url(/static/images/company/sp_bg-circle.png);
       background-position: center center;
       background-size: 375px;
     }

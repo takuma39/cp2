@@ -20,7 +20,7 @@ window.addEventListener("scroll", () => {
   <header class="header" :class="{ 'is-active': isActive }">
     <h1 class="logo">
       <router-link to="/">
-        <img alt="logo" src="@/assets/images/logo.svg" />
+        <img alt="logo" src="@/assets/images/logo/logo.svg" />
       </router-link>
     </h1>
     <nav class="nav">

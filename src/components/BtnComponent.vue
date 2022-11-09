@@ -24,7 +24,7 @@ const props = defineProps({
     :to="props.link"
     class="btn"
     :data-type="props.data"
-    v-show="props.type === 'A'"
+    v-if="props.type === 'A'"
   >
     <slot></slot>
   </router-link>
@@ -33,7 +33,7 @@ const props = defineProps({
     class="btn"
     type="submit"
     :data-type="props.data"
-    v-show="props.type === 'B'"
+    v-if="props.type === 'B'"
   >
     <slot></slot>
   </button>

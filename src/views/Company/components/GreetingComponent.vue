@@ -58,14 +58,14 @@ import Heading from "@/components/HeadingSecondaryComponent.vue";
 .greeting {
   @include section();
   padding: 100px 0 70px;
-  background-image: url(src/assets/images/company/bg-circle.png), url(src/assets/images/company/bg-face.png);
+  background-image: url(/static/images/company/bg-circle.png), url(/static/images/company/bg-face.png);
   background-position: center -20px, center 40px;
   background-repeat: no-repeat;
 
   // $break4: 768;
   @include mq(u-br4) {
     padding: 60px 0 60px;
-    background-image: url(src/assets/images/company/sp_bg-circle.png);
+    background-image: url(/static/images/company/sp_bg-circle.png);
     background-position: center -20px;
     background-size: 375px;
   }

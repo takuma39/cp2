@@ -64,7 +64,7 @@ import Btn from "@/components/BtnComponent.vue";
   }
   &__image {
     width: 60%;
-    background-image: url(src/assets/images/recruit/recruit.jpg);
+    background-image: url(/static/images/recruit/recruit.jpg);
     background-position: center center;
     background-size: cover;
 

@@ -28,7 +28,7 @@ import Btn from "@/components/BtnComponent.vue";
   justify-content: center;
   height: 100vh;
   color: #fff;
-  background-image: url(src/assets/images/hero/hero.jpg);
+  background-image: url(/static/images/hero/hero.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

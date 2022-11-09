@@ -29,7 +29,7 @@ const props = defineProps({
   <div
     class="card"
     :data-col="props.col"
-    v-show="props.type === 'A'"
+    v-if="props.type === 'A'"
     data-type="A"
   >
     <div class="card__img-wrapper">
@@ -46,7 +46,7 @@ const props = defineProps({
   <div
     class="card"
     :data-col="props.col"
-    v-show="props.type === 'B'"
+    v-if="props.type === 'B'"
     data-type="B"
   >
     <router-link to="/" class="card__link">

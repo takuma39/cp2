@@ -20,7 +20,7 @@ import ServiceJson from "@/assets/json/service.json";
           <Card
             v-for="service in ServiceJson"
             :key="service.id"
-            :src="`src/assets/images/service/${service.image}`"
+            :src="`/static/images/service/${service.image}`"
             type="A"
           >
             <template v-slot:title>{{ service.title }}</template>

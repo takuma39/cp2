@@ -30,7 +30,7 @@ const breadcrumbs = [
 <style scoped lang="scss">
 @import "@/assets/sass/app2.scss";
 .recruit {
-  background-image: url(src/assets/images/recruit/bg-geometry.png);
+  background-image: url(/static/images/recruit/bg-geometry.png);
   background-repeat: repeat;
 
   // $break4: 768;

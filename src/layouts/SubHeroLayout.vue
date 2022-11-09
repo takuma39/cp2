@@ -34,7 +34,7 @@ const props = defineProps({
   justify-content: center;
   height: 240px;
   color: #fff;
-  background-image: url(src/assets/images/hero/hero.jpg);
+  background-image: url(/static/images/hero/hero.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

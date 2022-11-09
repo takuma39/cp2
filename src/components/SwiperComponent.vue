@@ -36,7 +36,7 @@ const workCount = computed(() => {
     class="mySwiper"
   >
     <swiper-slide v-for="work in workCount" :key="work.id">
-      <img :src="`src/assets/images/work/${work.image}`" alt="" />
+      <img :src="`/static/images/work/${work.image}`" alt="" />
     </swiper-slide>
   </swiper>
 </template>
