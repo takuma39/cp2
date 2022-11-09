@@ -9,7 +9,7 @@ import Media from "./MediaComponent.vue";
         v-for="data in ServiceJson"
         :key="data.id"
         :title="data.title"
-        :image="`/static/images/service/${data.image}`"
+        :image="`./static/images/service/${data.image}`"
         :text="data.fullText"
       />
     </div>

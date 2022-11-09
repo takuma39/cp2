@@ -11,7 +11,7 @@ import WorkJson from "@/assets/json/work.json";
         <Card
           v-for="work in WorkJson"
           :key="work.id"
-          :src="`/static/images/work/${work.image}`"
+          :src="`./static/images/work/${work.image}`"
           type="B"
         >
           <template v-slot:title>{{ work.title }}</template>
