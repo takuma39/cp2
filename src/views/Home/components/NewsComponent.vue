@@ -1,7 +1,24 @@
 <script setup lang="ts">
 import Heading from "@/components/HeadingPrimaryComponent.vue";
 import NewsList from "@/components/NewsListComponent.vue";
-// import axios from "axios";
+// import NewsList from "@/components/pagination/PaginationItemComponent.vue";
+// import NewsJson from "@/assets/json/news/news.json";
+
+//型
+type NewsObject = {
+  id: number;
+  title: string;
+  date: string;
+  category: string;
+  image: string;
+  text1: string;
+  text2: string;
+  text3: string;
+};
+
+// const HomeNews = JSON.parse(JSON.stringify(NewsJson)).sort(
+//   (a: NewsObject, b: NewsObject) => Date.parse(b.date) - Date.parse(a.date)
+// );
 </script>
 
 <template>

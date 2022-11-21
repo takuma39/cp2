@@ -11,9 +11,24 @@ const props = defineProps({
   },
 });
 
-const newsDate = newsJson.sort(
-  (a, b) => Date.parse(b.date) - Date.parse(a.date)
+//型
+type NewsObject = {
+  id: number;
+  title: string;
+  date: string;
+  category: string;
+  image: string;
+  text1: string;
+  text2: string;
+  text3: string;
+};
+
+//-----定数-----
+//クローン＆並び替え
+const newsDate = JSON.parse(JSON.stringify(newsJson)).sort(
+  (a: NewsObject, b: NewsObject) => Date.parse(b.date) - Date.parse(a.date)
 );
+
 const newsCount = computed(() => {
   return newsDate.slice(0, props.count);
 });
@@ -31,7 +46,9 @@ const newsCount = computed(() => {
           </div>
         </div>
         <div class="newsList__body">
-          <router-link to="/news" class="newsList__link">
+          <router-link
+            :to="{ name: 'single', params: { id: news.id } }" class="newsList__link"
+          >
             {{ news.title }}
           </router-link>
         </div>
