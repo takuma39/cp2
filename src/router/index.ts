@@ -1,8 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/Home/HomeView.vue";
 import NewsView from "../views/News/NewsView.vue";
-// import NewsSingleView from "../views/News/NewsSingleView.vue";
-// import SingleView from "../views/News/SingleView.vue";
 import ServiceView from "../views/Service/ServiceView.vue";
 import WorkView from "../views/Work/WorkView.vue";
 import CompanyView from "../views/Company/CompanyView.vue";
@@ -31,11 +29,6 @@ const router = createRouter({
       name: "news",
       component: NewsView,
     },
-    // {
-    //   path: "/news/:id",
-    //   name: "single",
-    //   component: SingleView,
-    // },
     {
       path: "/service",
       name: "service",
